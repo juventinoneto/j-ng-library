@@ -1,3 +1,5 @@
 <mat-form-field class="example-full-width">
-  <input matInput [placeholder]="placeholder" [value]="_value">
+  <input matInput [placeholder]="label" [value]="_value" type="type" [readonly]="readonly" #message>
+  <mat-hint *ngIf="showLeftHint" align="start"><strong>{{ messageLeftHint }}</strong></mat-hint>
+  <mat-hint *ngIf="showRigthHint" align="end">{{ message.value.length }} / {{ rigthValue }}</mat-hint>
 </mat-form-field>

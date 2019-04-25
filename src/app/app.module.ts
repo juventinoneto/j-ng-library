@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { JInputModule } from './components/j-input/j-input.module';
-import { JTextareaComponent } from './components/j-textarea/j-textarea.component';
+import { JTextareaModule } from './components/j-textarea/j-textarea.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { JTextareaComponent } from './components/j-textarea/j-textarea.component
     BrowserModule,
     BrowserAnimationsModule,
     JInputModule,
-    JTextareaComponent
+    JTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
